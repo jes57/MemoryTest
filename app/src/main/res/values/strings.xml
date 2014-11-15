@@ -4,5 +4,11 @@
     <string name="app_name">MemoryTest</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="listView_array">
+        <item>Memory Test 1</item>
+        <item>Memory Test 2</item>
+        <item>Memory Test 3</item>
+    </string-array>
+
 
 </resources>
