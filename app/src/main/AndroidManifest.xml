@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".QuizImage1"
+            android:label="Memory Test 1"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".QuizImage2"
+            android:label="Memory Test 1"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".QuizImage3"
+            android:label="Memory Test 1"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="Memory Quiz"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>

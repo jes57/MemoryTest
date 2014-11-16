@@ -1,6 +1,7 @@
 package com.garufa.memorytest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
@@ -40,6 +41,15 @@ public class MainActivity extends Activity {
                         String.valueOf(parent.getItemAtPosition(position));
 
                 Toast.makeText(MainActivity.this, testPicked, Toast.LENGTH_SHORT).show();
+
+                Intent quizIntent = new Intent(MainActivity.this, Quiz.class);
+
+                quizIntent.putExtra("quizNumber", position);
+                startActivity(quizIntent);
+//                if (position == 0){
+//                    Intent test1_intent = new Intent(MainActivity.this, QuizImage1.class);
+//                    startActivity(test1_intent);
+//                }
             }
         });
     }
