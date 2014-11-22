@@ -40,10 +40,6 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final int pos = position;
-                String testPicked = "You selected " +
-                        String.valueOf(parent.getItemAtPosition(position));
-
-//                Toast.makeText(MainActivity.this, testPicked, Toast.LENGTH_SHORT).show();
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setTitle("Ready to begin?");
@@ -69,10 +65,6 @@ public class MainActivity extends Activity {
 
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
-//                if (position == 0){
-//                    Intent test1_intent = new Intent(MainActivity.this, QuizImage1.class);
-//                    startActivity(test1_intent);
-//                }
             }
         });
     }
