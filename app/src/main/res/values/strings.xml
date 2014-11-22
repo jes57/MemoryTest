@@ -5,10 +5,80 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="menu_exit_option">Exit</string>
+    <string name="quiz_question">Please choose the item that was present in the image you viewed.
+        \nIf none of the items were present, choose "None of the above".\n\n</string>
+    <string name="radioButton_none">None of the above</string>
+    <string name="button_submit">Submit</string>
     <string-array name="listView_array">
         <item>Memory Test 1</item>
         <item>Memory Test 2</item>
         <item>Memory Test 3</item>
+    </string-array>
+    <string-array name="image1">
+        <item>The letter C</item>
+        <item>A bicycle</item>
+        <item>A cat</item>
+        <item>A dog</item>
+        <item>A baseball glove</item>
+        <item>A football</item>
+        <item>An ice cream cone</item>
+        <item>A yo-yo</item>
+        <item>An apple</item>
+        <item>A stove</item>
+        <item>A butterfly</item>
+        <item>A cake</item>
+        <item>A cup of coffee</item>
+        <item>A sling-shot</item>
+        <item>A magnet</item>
+        <item>A pot</item>
+        <item>A drum</item>
+        <item>An alarm clock</item>
+        <item>A wagon</item>
+        <item>A dump truck</item>
+    </string-array>
+    <string-array name="image2">
+        <item>A TV</item>
+        <item>An arrow and target</item>
+        <item>A deer</item>
+        <item>A plate of bagels</item>
+        <item>A cow</item>
+        <item>A mouse trap</item>
+        <item>A mouse</item>
+        <item>A lobster</item>
+        <item>A fishbowl</item>
+        <item>A cake</item>
+        <item>A milk jug</item>
+        <item>A comb</item>
+        <item>A pair of scissors</item>
+        <item>A chair</item>
+        <item>A top-hat</item>
+        <item>A bear</item>
+        <item>A present</item>
+        <item>An elephant</item>
+        <item>A clown</item>
+        <item>A bed</item>
+    </string-array>
+    <string-array name="image3">
+        <item>A trumpet</item>
+        <item>A crown</item>
+        <item>An airplane</item>
+        <item>A guitar</item>
+        <item>A car</item>
+        <item>A jolly roger</item>
+        <item>A jack-o-lantern</item>
+        <item>A football helmet</item>
+        <item>A diamond ring</item>
+        <item>An acorn</item>
+        <item>A turkey</item>
+        <item>A pair of cowboy boots</item>
+        <item>A duck</item>
+        <item>An ear of corn</item>
+        <item>A screw driver</item>
+        <item>A pair of pliers</item>
+        <item>A wrench</item>
+        <item>A banana</item>
+        <item>A nest of eggs</item>
+        <item>A football</item>
     </string-array>
 
 

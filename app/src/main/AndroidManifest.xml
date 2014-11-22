@@ -19,22 +19,26 @@
         <activity
             android:name=".QuizImage1"
             android:label="Memory Test 1"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".QuizImage2"
             android:label="Memory Test 1"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".QuizImage3"
             android:label="Memory Test 1"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Quiz"
             android:label="Memory Quiz"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

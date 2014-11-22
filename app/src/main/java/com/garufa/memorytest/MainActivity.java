@@ -1,6 +1,8 @@
 package com.garufa.memorytest;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -37,15 +39,36 @@ public class MainActivity extends Activity {
         memoryTestListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                final int pos = position;
                 String testPicked = "You selected " +
                         String.valueOf(parent.getItemAtPosition(position));
 
-                Toast.makeText(MainActivity.this, testPicked, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, testPicked, Toast.LENGTH_SHORT).show();
 
-                Intent quizIntent = new Intent(MainActivity.this, Quiz.class);
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Ready to begin?");
+                builder.setIcon(R.drawable.ic_launcher);
+                builder.setMessage("You will be presented with an image and given 10 " +
+                        "seconds to memorize the images. You will then be presented with a " +
+                        "quiz to test your memory.\n\nPress OK to begin or cancel to choose another quiz.");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent quizIntent = new Intent(MainActivity.this, Quiz.class);
 
-                quizIntent.putExtra("quizNumber", position);
-                startActivity(quizIntent);
+                        quizIntent.putExtra("quizNumber", pos);
+                        startActivity(quizIntent);
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        return;
+                    }
+                });
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
 //                if (position == 0){
 //                    Intent test1_intent = new Intent(MainActivity.this, QuizImage1.class);
 //                    startActivity(test1_intent);

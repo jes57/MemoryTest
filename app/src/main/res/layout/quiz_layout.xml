@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="New Text"
-        android:id="@+id/textView" />
+        android:textSize="15dp"
+        android:text="@string/quiz_question"
+        android:id="@+id/textView_quiz_question" />
+
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New RadioButton" android:id="@+id/radioButton1" android:checked="true"/>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New RadioButton" android:id="@+id/radioButton2" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New RadioButton" android:id="@+id/radioButton3" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radioButton_none" android:id="@+id/radioButton4" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/button_submit"
+        android:id="@+id/button_submit"/>
 </LinearLayout>

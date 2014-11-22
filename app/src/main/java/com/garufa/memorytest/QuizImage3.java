@@ -10,7 +10,7 @@ import android.util.Log;
  * Created by Jason on 11/16/2014.
  */
 public class QuizImage3 extends Activity {
-    private final int SPLASH_DISPLAY_LENGTH = 10000; // 10 Seconds
+    private final int SPLASH_DISPLAY_LENGTH = 3000; // 3 Seconds
     String TAG = "QuizImage3";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
