@@ -40,31 +40,53 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final int pos = position;
+                if (pos < 3){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                    builder.setTitle("Ready to begin?");
+                    builder.setIcon(R.drawable.ic_launcher);
+                    builder.setMessage("You will be presented with an image and given 10 " +
+                            "seconds to memorize the images. You will then be presented with a " +
+                            "quiz to test your memory.\n\nPress OK to begin or cancel to choose another quiz.");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent quizIntent;
+                            switch (pos){
+                                case 0:
+                                    quizIntent = new Intent(MainActivity.this, QuizImage1.class);
+                                    quizIntent.putExtra("quizNumber", pos);
+                                    startActivity(quizIntent);
+                                    break;
+                                case 1:
+                                    quizIntent = new Intent(MainActivity.this, QuizImage2.class);
+                                    quizIntent.putExtra("quizNumber", pos);
+                                    startActivity(quizIntent);
+                                    break;
+                                case 2:
+                                    quizIntent = new Intent(MainActivity.this, QuizImage3.class);
+                                    quizIntent.putExtra("quizNumber", pos);
+                                    startActivity(quizIntent);
+                                    break;
+                            }
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("Ready to begin?");
-                builder.setIcon(R.drawable.ic_launcher);
-                builder.setMessage("You will be presented with an image and given 10 " +
-                        "seconds to memorize the images. You will then be presented with a " +
-                        "quiz to test your memory.\n\nPress OK to begin or cancel to choose another quiz.");
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent quizIntent = new Intent(MainActivity.this, Quiz.class);
+                        }
+                    });
+                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            return;
+                        }
+                    });
 
-                        quizIntent.putExtra("quizNumber", pos);
-                        startActivity(quizIntent);
-                    }
-                });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        return;
-                    }
-                });
-
-                AlertDialog alertDialog = builder.create();
-                alertDialog.show();
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                } else if (pos == 3){
+                    Intent sequenceIntent = new Intent(MainActivity.this, Sequence.class);
+                    startActivity(sequenceIntent);
+                } else {
+                    Intent oddOneOutIntent = new Intent(MainActivity.this, OddOneOut.class);
+                    startActivity(oddOneOutIntent);
+                }
             }
         });
     }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/sequence_question"
+        android:id="@+id/sequence_question" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="8723, 3872, 2387, ____"
+        android:id="@+id/sequence" />
+    <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8372" android:checked="true" android:id="@+id/rB_seq1" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7238" android:id="@+id/rB_seq2" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2738" android:id="@+id/rB_seq3" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_submit"
+        android:layout_gravity="right"
+        android:id="@+id/button_sequence" />
+</LinearLayout>

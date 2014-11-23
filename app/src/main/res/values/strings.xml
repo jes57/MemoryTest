@@ -5,14 +5,18 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="menu_exit_option">Exit</string>
-    <string name="quiz_question">Please choose the item that was present in the image you viewed.
+    <string name="quiz_question">Which of these items was in the image?
         \nIf none of the items were present, choose "None of the above".\n\n</string>
     <string name="radioButton_none">None of the above</string>
     <string name="button_submit">Submit</string>
+    <string name="sequence_question">What is the next number in this series?\n</string>
+    <string name="odd_one_out_text">Which one of these images is the odd one out?</string>
     <string-array name="listView_array">
-        <item>Memory Test 1</item>
-        <item>Memory Test 2</item>
-        <item>Memory Test 3</item>
+        <item>Memory Test Image 1</item>
+        <item>Memory Test Image 2</item>
+        <item>Memory Test Image 3</item>
+        <item>Number Sequence</item>
+        <item>Odd-One-Out</item>
     </string-array>
     <string-array name="image1">
         <item>The letter C</item>

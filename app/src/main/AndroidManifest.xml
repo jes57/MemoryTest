@@ -17,26 +17,38 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Quiz"
+            android:label="Memory Test 1"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
             android:name=".QuizImage1"
             android:label="Memory Test 1"
             android:theme="@style/AppTheme"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".QuizImage2"
             android:label="Memory Test 1"
             android:theme="@style/AppTheme"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".QuizImage3"
             android:label="Memory Test 1"
             android:theme="@style/AppTheme"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".Quiz"
-            android:label="Memory Quiz"
+            android:name=".Sequence"
+            android:label="Number Sequence"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".OddOneOut"
+            android:label="Odd One Out"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
         </activity>
